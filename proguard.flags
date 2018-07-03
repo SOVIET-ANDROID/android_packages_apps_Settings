@@ -13,6 +13,8 @@
     public void *(android.view.MenuItem);
 }
 
+-keep class com.android.settings.*Settings
+
 # Keep setters in Views so that animations can still work.
 -keep public class * extends android.view.View {
     public <init>(android.content.Context);
